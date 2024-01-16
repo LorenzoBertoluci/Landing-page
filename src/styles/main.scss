@@ -1,7 +1,7 @@
 @use 'variaveis';
 @use 'hero';
-@use 'shows';
-@use 'plans';
+@use 'assuntos';
+@use 'extras';
 @use 'avaible-devices';
 @use 'faq';
 @use 'footer';
@@ -112,6 +112,7 @@ body {
 	padding: 8px 14px;
 	letter-spacing: 1px;
 	border: 1px solid variaveis.$corDeFundoBotaoPrimario;
+	margin-top: 24px;
 
 	&--secondary {
 		background-color: variaveis.$corDeFundoBotaoSecundario;
