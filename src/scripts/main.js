@@ -21,9 +21,9 @@ document.addEventListener('DOMContentLoaded', function () {
 			const tabAlvo = botao.target.dataset.tabButton;
 			const tab = document.querySelector(`[data-tab-id=${tabAlvo}]`);
 			escondeTodasAbas() ;
-			tab.classList.add('shows__list--is-active');
+			tab.classList.add('assuntos__list--is-active');
 			removeBotaoAtivo();
-			botao.target.classList.add('shows__tabs__button--is-active');
+			botao.target.classList.add('assuntos__tabs__button--is-active');
 		})
 	}
 
@@ -40,26 +40,20 @@ function ExibeElementosDoHeader(){
 	const header = document.querySelector('header');
 	header.classList.remove('header--is-hidden');
 }
-function abreOuFechaResposta(elemento) {
-	const classe = 'faq__question___item--is-open';
-	const elementoPai = elemento.target.parentNode;
 
-	elementoPai.classList.toggle(classe);
-
-}
 
 function removeBotaoAtivo() {
 	const buttons = document.querySelectorAll('[data-tab-button]');
 
 	for (let i = 0; i < buttons.length; i++) {
-		buttons[i].classList.remove('shows__tabs__button--is-active');
+		buttons[i].classList.remove('assuntos__tabs__button--is-active');
 	}
 }
 function escondeTodasAbas() {
 	const tabsContainer = document.querySelectorAll('[data-tab-id]');
 
 	for (let i = 0; i < tabsContainer.length; i++) {
-		tabsContainer[i].classList.remove('shows__list--is-active');
+		tabsContainer[i].classList.remove('assuntos__list--is-active');
 	}
 }
 

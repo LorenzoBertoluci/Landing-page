@@ -6,9 +6,12 @@
 	}
 
 	&__list{
-		display: flex;
+		display: grid;
 		justify-content: space-around;
 		margin-top: 50px;
+		grid-template-columns: 1fr 1fr 1fr;
+		text-align: center;
+		align-items: center;
 
 		@media (max-width:768px){
 			display: block;
@@ -16,11 +19,12 @@
 
 		.button {
 			margin-top: 24px;
+			grid-template-columns: 1fr 1fr;
 		}
 
 		&__item{
-			text-align: center;
-			padding: 60px 44px 44px;
+			display: block;
+			padding: 44px 28px 28px;
 			max-width: 380px;
 			width: 100%;
 
@@ -34,6 +38,7 @@
 
 			img {
 				width: 480px;
+				
 			}
 
 			strong {
